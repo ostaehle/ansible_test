@@ -1,2 +1,2 @@
 # ansible_test
-Test ansible playbooks
+Repository containing some ansible playbooks for tests with the ansible tower API
