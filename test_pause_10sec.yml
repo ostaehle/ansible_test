@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: Test Pause Playbook
   hosts: all
   tasks:
     - pause: seconds=10

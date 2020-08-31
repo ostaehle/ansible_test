@@ -1,4 +1,4 @@
-- name: Hello World Sample
+- name: Test Fail Playbook
   hosts: all
   tasks:
     - fail:
