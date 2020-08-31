@@ -6,3 +6,7 @@ Repository containing some ansible playbooks for tests with the ansible tower AP
 only outputs a debug message.
 - hello_world_param:
 outputs a debug message. needs the variable 'message' to be set.
+- test_fail:
+playbook fails immediately
+- test_pause_10sec:
+playbook sleeps for 10sec and finishes with a debug message.

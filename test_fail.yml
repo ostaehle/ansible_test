@@ -1,0 +1,5 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - fail:
+        msg: "playbook test fail"

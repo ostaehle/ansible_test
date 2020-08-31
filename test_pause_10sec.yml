@@ -1,0 +1,6 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - pause: seconds=10
+    - debug:
+        msg: "After 10sec pause"
