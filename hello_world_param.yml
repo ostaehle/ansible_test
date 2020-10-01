@@ -4,3 +4,9 @@
     - name: Hello Message
       debug:
         msg: "{{ message }}"
+    - pause: seconds=10
+    - debug:
+        msg: "After 10sec pause"
+    - pause: seconds=20
+    - debug:
+        msg: "After 20sec pause"
