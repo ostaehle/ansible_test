@@ -1,0 +1,7 @@
+- name: failover test script
+  hosts: all
+  tasks:
+    - pause: seconds=2
+    - name: done message
+      debug:
+        msg: "failover done!"

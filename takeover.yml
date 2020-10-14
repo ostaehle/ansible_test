@@ -1,0 +1,7 @@
+- name: takeover test script
+  hosts: all
+  tasks:
+    - pause: seconds=3
+    - name: done message
+      debug:
+        msg: "takeover done!"
