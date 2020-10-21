@@ -1,5 +1,5 @@
 - name: provision test script
-  hosts: {{ standort }}
+  hosts: "{{ standort }}"
   tasks:
     - pause: seconds=2
     - name: done message
