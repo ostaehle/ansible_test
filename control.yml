@@ -2,7 +2,7 @@
   hosts: all
 
   handlers:
-    import_handlers = "test_handler.yml"
+    - import_handlers: "test_handler.yml"
 
   tasks:
-   - include_tasks: "{ { segment_playbook } }"
+    - include_tasks: "{ { segment_playbook } }"
