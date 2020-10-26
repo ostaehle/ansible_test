@@ -1,4 +1,4 @@
-- include: "{{ segment_playbook }}"
+- import_playbook: "{{ segment_playbook }}"
 
 - name: "Control-Playbook"
 
