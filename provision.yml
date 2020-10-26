@@ -1,8 +1,6 @@
 - name: start provision
   debug:
     msg: "start provision"
-
-- name: call test handler
   notify: "start test"
 
 - name: done message
