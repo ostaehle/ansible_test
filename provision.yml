@@ -7,5 +7,3 @@
 - name: done message
   debug:
     msg: "provision done!"
-  changed_when: true
-  notify: "start test handler"
