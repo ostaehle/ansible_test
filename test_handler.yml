@@ -1,7 +1,5 @@
-handlers:
 - name: "test"
   debug:
     msg: "Teset Handler running"
     
-  listen: "start test"
-
+  listen: "start test handler"
