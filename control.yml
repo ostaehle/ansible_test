@@ -6,4 +6,4 @@
       include_tasks: test_handler.yml
 
   tasks:
-    - include_tasks: "{ { segment_playbook } }"
+    - include_tasks: "{{ segment_playbook }}"
