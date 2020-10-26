@@ -1,8 +1,11 @@
 - name: start provision
   debug:
     msg: "start provision"
+  changed_when: true
   notify: "start test"
 
 - name: done message
   debug:
     msg: "provision done!"
+  changed_when: true
+  notify: "start test handler"
