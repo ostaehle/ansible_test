@@ -1,7 +1,9 @@
-- import_playbook: "{{ segment_playbook }}"
-
 - name: "Control-Playbook"
+  hosts: all
 
   handlers:
     - name: start test
       include_tasks: test_handler.yml
+
+  tasks:
+    - include_tasks: "{{ segment_playbook }}"

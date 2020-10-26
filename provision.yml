@@ -1,8 +1,6 @@
-- name: provision test script
-  hosts: all
-  tasks:
-    - name: call test handler
-      notify: "start test"
-    - name: done message
-      debug:
-        msg: "provision done!"
+- pause: seconds=2
+- name: call test handler
+  notify: "start test"
+- name: done message
+  debug:
+    msg: "provision done!"
