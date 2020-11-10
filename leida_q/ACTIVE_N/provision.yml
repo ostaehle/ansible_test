@@ -1,0 +1,11 @@
+- name: start provision
+  debug:
+    msg: "start provision leida_q"
+
+- name: start handler
+  command: "true"
+  notify: "start test"
+
+- name: done message
+  debug:
+    msg: "provision leida_q done!"
