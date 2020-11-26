@@ -1,11 +1,13 @@
 - name: Hello World with parameter
   debug:
     msg: "{{ message }}"
-- pause: seconds=10
+- pause:
+    seconds: 10
 - name: Message after pause
   set_fact:
     debug_msg: "After 10sec pause"
   import_tasks: roles/test/debug.yml
-- pause: seconds=20
+- pause:
+    seconds: 20
 - debug:
     msg: "After 20sec pause"
