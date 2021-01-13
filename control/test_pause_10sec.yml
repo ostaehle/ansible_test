@@ -1,0 +1,4 @@
+- name: Test Pause Playbook
+  pause: seconds=10
+- debug:
+    msg: "After 10sec pause"
