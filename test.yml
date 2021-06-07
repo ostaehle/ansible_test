@@ -1,6 +1,4 @@
-- name: Hello World Sample
-  hosts: all
-  tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+- name: Test Playbook
+  pause: seconds=30
+- debug:
+    msg: "Hello Test"
