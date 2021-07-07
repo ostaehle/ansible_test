@@ -2,18 +2,18 @@
   pause: seconds=5
 
 - stat:
-    path: /tmp/toggle
+    path: "{{ filename | default('/tmp/toggle') }}"
   register: toggle
 
 - name: create the toggle file
   file:
-    path: /tmp/toggle
+    path: "{{ filename | default('/tmp/toggle') }}"
     state: touch
   when: not toggle.stat.exists
 
 - name: remove the toggle file
   file:
-    path: /tmp/toggle
+    path: "{{ filename | default('/tmp/toggle') }}"
     state: absent
   when: toggle.stat.exists
 
