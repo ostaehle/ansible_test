@@ -1,0 +1,23 @@
+- name: Test Toggle Playbook
+  pause: seconds=5
+
+- stat:
+    path: /tmp/toggle
+  register: toggle
+
+- name: create the toggle file
+  file:
+    path: /tmp/toggle
+    state: touch
+  when: not toggle.stat.exists
+
+- name: remove the toggle file
+  file:
+    path: /tmp/toggle
+    state: absent
+  when: toggle.stat.exists
+
+- name: fail when the toggle file does not exist
+  fail:
+    msg: "playbook fail as toggle file does not exist"
+  when: not toggle.stat.exists
